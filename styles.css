@@ -1,0 +1,310 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  color: #6f737f;
+}
+
+header {
+  background-color: hsl(0, 0%, 98%);
+  padding: 1em 0 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "DM Serif Display", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav-toggle {
+  padding: 0em;
+  cursor: pointer;
+  border: 0;
+  position: absolute;
+  right: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.nav-toggle__close {
+  display: none;
+}
+
+.open-nav .nav-toggle__close {
+  display: block;
+}
+
+.open-nav .nav-toggle__hamburger {
+  display: none;
+}
+
+.logo {
+  width: 100%;
+  max-width: 100px;
+}
+
+.logo--mobile {
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+}
+
+.nav {
+  width: 100%;
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  background: hsl(270, 9%, 17%);
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+  text-align: center;
+  padding: 1em 0 17em;
+  background-image: url(./images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-top: 1.5em;
+}
+
+.nav__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav__link--button {
+  color: #fff;
+  border: 2px solid hsl(0, 0%, 98%);
+  display: block;
+  padding: 1em 0;
+}
+
+.intro__section {
+  position: relative;
+  min-height: 124vh;
+}
+
+.divider--small {
+  margin: 0;
+  width: 40%;
+  height: 1px;
+  background-color: hsl(256, 26%, 20%);
+  border: 0;
+}
+
+.divider--hide {
+  visibility: hidden;
+}
+
+.divider--mobile {
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  bottom: 2em;
+  display: block;
+}
+
+.hero {
+  position: absolute;
+  top: calc(100vh - 38.5%);
+  width: 100%;
+  background: hsl(256, 26%, 20%);
+  color: #fff;
+  text-align: center;
+  padding: 5.5em 0;
+}
+
+.intro__img--mobile {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.intro__img--desktop {
+  display: none;
+}
+
+.intro-foreground {
+  width: 100%;
+  height: calc(100vh - 21.2%);
+  background: url(./images/bg-pattern-intro-left-mobile.svg),
+    url(./images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  position: absolute;
+  bottom: -1em;
+}
+
+.hero__text--big {
+  font-size: 2.5rem;
+  line-height: 1.1em;
+  letter-spacing: 1.5px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__text--small {
+  margin-top: 0.5em;
+}
+
+.hero__text--btn,
+.third-section__btn {
+  text-transform: uppercase;
+  width: auto;
+  max-width: 150px;
+  margin: 0 auto;
+  margin-top: 1em;
+  display: block;
+}
+
+.btn {
+  color: #fff;
+  border: 2px solid hsl(0, 0%, 98%);
+  padding: 0.5em 1em;
+}
+
+.second-section {
+  text-align: center;
+}
+
+.second-section h2,
+.second-section h3 {
+  color: black;
+}
+
+.second-section__title {
+  font-size: 2.2rem;
+  padding-bottom: 2em;
+}
+
+.snappy,
+.price,
+.people {
+  margin-bottom: 3em;
+}
+
+.snappy__icon,
+.price__icon,
+.people__icon {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.snappy__title,
+.price__title,
+.people__title {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.third-section {
+  padding: 4em;
+  margin: 5em auto;
+  background: url(./images/bg-pattern-how-we-work-mobile.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-color: hsl(256, 26%, 20%);
+  text-align: center;
+  color: #fff;
+}
+
+.third-section__text {
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.third-section__btn {
+  margin: 2em auto;
+  padding: 0.5em;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer__bg {
+  background: url(./images/bg-pattern-footer-mobile.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-top: 5em;
+}
+
+.footer__logo {
+  margin-bottom: 2em;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  margin: 0 auto 2em;
+}
+
+.footer__divider {
+  height: 1px;
+  background-color: hsl(273, 4%, 51%);
+  border: 0;
+}
+
+.footer__plain {
+  padding: 0 0 2em;
+}
+
+.footer__heading {
+  color: hsl(273, 4%, 51%);
+  margin: 2em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Karla", sans-serif;
+}
+
+.footer__link {
+  color: hsl(256, 26%, 20%);
+  text-transform: uppercase;
+  font-weight: 700;
+}

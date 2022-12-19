@@ -20,75 +20,79 @@
   </head>
   <body>
     <header>
-      <div class="container row">
-        <img
-          src="./images/logo.svg"
-          alt="Insure logo"
-          class="logo logo--mobile"
-        />
-        <button class="nav-toggle" aria-label="open navigation">
+      <div class="header header-container">
+        <div class="container reduce-width">
           <img
-            src="./images/icon-hamburger.svg"
-            alt="hamburger icon"
-            class="nav-toggle__hamburger"
+            src="./images/logo.svg"
+            alt="Insure logo"
+            class="logo logo--mobile"
           />
-          <img
-            src="./images/icon-close.svg"
-            alt="hamburger close icon"
-            class="nav-toggle__close"
-          />
-        </button>
+          <button class="nav-toggle" aria-label="open navigation">
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="hamburger icon"
+              class="nav-toggle__hamburger"
+            />
+            <img
+              src="./images/icon-close.svg"
+              alt="hamburger close icon"
+              class="nav-toggle__close"
+            />
+          </button>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">How we work</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Account</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--button container"
+                >View plans</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">How we work</a>
-          </li>
-          <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Account</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link nav__link--button container"
-              >View plans</a
-            >
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <div class="intro__section">
         <div class="top-bg"></div>
-        <hr class="divider--small divider--hide" />
-        <div class="hero">
-          <div class="container">
-            <h1 class="hero__text--big">
-              Humanizing<br />
-              your insurance.
-            </h1>
-            <p class="hero__text--small">
-              Get your life insurance coverage easier and faster. We blend our
-              expertise and technology to help you find the plan that’s right
-              for you. Ensure you and your loved ones are protected.
-            </p>
-            <a href="#" class="btn hero__text--btn">View plans</a>
+        <div class="intro__section--desktop">
+          <div class="hero">
+            <hr class="divider--small divider--hide" />
+            <div class="container no-gutter">
+              <h1 class="hero__text--big">
+                Humanizing<br />
+                your insurance.
+              </h1>
+              <p class="hero__text--small">
+                Get your life insurance coverage easier and faster. We blend our
+                expertise and technology to help you find the plan that’s right
+                for you. Ensure you and your loved ones are protected.
+              </p>
+              <a href="#" class="btn hero__text--btn">View plans</a>
+            </div>
           </div>
+          <img
+            src="./images/image-intro-mobile.jpg"
+            alt="Intro section image"
+            class="intro__img--mobile"
+          />
+          <img
+            src="./images/image-intro-desktop.jpg"
+            alt="Intro section image"
+            class="intro__img--desktop"
+          />
+          <hr class="divider--small divider--mobile" />
         </div>
-        <img
-          src="./images/image-intro-mobile.jpg"
-          alt="Intro section image"
-          class="intro__img--mobile"
-        />
-        <img
-          src="./images/image-intro-desktop.jpg"
-          alt="Intro section image"
-          class="intro__img--desktop"
-        />
-        <hr class="divider--small divider--mobile" />
         <div class="intro-foreground"></div>
       </div>
       <section class="second-section">
-        <h2 class="second-section__title">We’re different</h2>
+        <h2 class="second-section__title container">We’re different</h2>
         <div class="container row">
           <div class="snappy col">
             <span class="snappy__icon"
@@ -135,8 +139,8 @@
       </section>
 
       <footer class="footer">
-        <div class="row footer__bg">
-          <div class="container">
+        <div class="footer__bg">
+          <div class="container row">
             <img
               src="./images/logo.svg"
               alt="Footer logo"
@@ -164,12 +168,12 @@
                 class="social-icon"
               />
             </div>
-            <hr class="footer__divider" />
           </div>
+          <hr class="footer__divider container" />
         </div>
         <div class="container">
           <div class="row footer__plain">
-            <div class="col">
+            <div class="col col-space">
               <h3 class="footer__heading">Our company</h3>
 
               <p class="footer__link">How we work</p>
@@ -177,7 +181,7 @@
               <p class="footer__link">View plans</p>
               <p class="footer__link">Reviews</p>
             </div>
-            <div class="col">
+            <div class="col col-space">
               <h3 class="footer__heading">Help me</h3>
 
               <p class="footer__link">FAQ</p>
@@ -185,14 +189,14 @@
               <p class="footer__link">Privacy policy</p>
               <p class="footer__link">Cookies</p>
             </div>
-            <div class="col">
+            <div class="col col-space">
               <h3 class="footer__heading">Contact</h3>
 
               <p class="footer__link">Sales</p>
               <p class="footer__link">Support</p>
               <p class="footer__link">Live chat</p>
             </div>
-            <div class="col">
+            <div class="col col-space">
               <h3 class="footer__heading">Others</h3>
 
               <p class="footer__link">Careers</p>

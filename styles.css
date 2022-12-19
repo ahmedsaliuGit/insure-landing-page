@@ -98,7 +98,7 @@ p {
   padding: 1em 0 17em;
   background-image: url(./images/bg-pattern-mobile-nav.svg);
   background-repeat: no-repeat;
-  background-position-y: right bottom;
+  background-position: right bottom;
 }
 
 .nav__list {

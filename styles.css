@@ -577,17 +577,3 @@ p {
     margin-right: 6em;
   }
 }
-
-@media (min-width: 1500px) {
-  .intro__section {
-    min-height: 60vh;
-  }
-
-  .top-bg {
-    height: 40vh;
-  }
-
-  .intro-foreground {
-    height: 60vh;
-  }
-}

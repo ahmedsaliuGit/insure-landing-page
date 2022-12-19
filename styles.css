@@ -577,3 +577,31 @@ p {
     margin-right: 6em;
   }
 }
+
+@media (min-width: 1440px) {
+  .intro__section {
+    min-height: 90vh;
+  }
+
+  .intro-foreground {
+    height: 90vh;
+  }
+
+  .divider--mobile {
+    bottom: -1em;
+  }
+}
+
+@media (min-width: 2500px) {
+  .intro__section {
+    min-height: 70vh;
+  }
+
+  .intro-foreground {
+    height: 70vh;
+  }
+
+  .divider--mobile {
+    bottom: -4em;
+  }
+}
